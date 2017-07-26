@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="pragma" content="no-cache">
+    <title data-attach-point="title"></title>
+    <meta data-attach-point="keywords" name="keywords" content="">
+    <meta data-attach-point="description" name="description" content="">
+    <link rel="stylesheet" type="text/css" href="src/mobile.min.css"/>
+    <link rel="stylesheet" type="text/css" href="src/swiper.min.css"/>
+    <script src="require.min.js"></script>
+    <script src="require-config.js"></script>
+</head>
+
+<body class="mhome">
+
+<!--对话框-->
+<div id="top" class="topdiv" data-attach-point="top">
+    <ul class="clear_his">
+        <li class="tophis">是否清空历史搜索</li>
+        <li>
+            <span class="cancel" data-attach-point="cancel"><a>取消</a></span>
+            <span class="confirm" data-attach-point="ok"><a>确定</a></span>
+        </li>
+    </ul>
+</div>
+
+
+<!--遮罩层-->
+<div id="below" class="belowdiv" data-attach-point="below"></div>
+
+
+<!--正文-->
+<div style="display: block" data-attach-point="master">
+
+</div>
+
+
+<!--搜索页-->
+<div style="display:none" class="container_s" data-attach-point='searchPage'>
+    <!--搜索条-->
+    <div class="header-s">
+        <div class="search_back" data-attach-point="goIn"></div>
+        <div class="searchGoods_txt">
+            <div>
+                <input type="text"  class="search_pro"  autocomplete="off" placeholder="输入商品名称" data-attach-point="searchCase">
+                <a class="icon-close" style="display: none" data-attach-point="icon"></a>
+                <input type="button" class="search_submit" value="搜索" data-attach-point="fd">
+            </div>
+        </div>
+    </div>
+    <!--搜索提示列表-->
+    <div class="search_con" style="display:none" data-attach-point="hintDiv">
+        <ul class="search_list" data-attach-point="hintList">
+
+        </ul>
+    </div>
+    <!--tab-->
+    <div class="main"  style="display:block" data-attach-point="searchDiv">
+        <div class="mainSearch">
+            <div class="tab">
+                <div class="searchTab">
+                    <span class="search_tab1 active" data-attach-point="mySearch">我的搜索</span>
+                    <span class="search_tab2" data-attach-point="allSearch">大家都在搜</span>
+                </div>
+            </div>
+            <div class="search_box" style="display:block" data-attach-point="mDiv">
+                <ul class="search_list" data-attach-point="ownList">
+
+                </ul>
+                <div class="sear-clear">
+                    <p class="searchhistory" data-attach-point="clear">清空历史记录</p>
+                </div>
+            </div>
+            <div class="search_box" style="display:none" data-attach-point="aDiv">
+                <ul class="search_list" data-attach-point="alList">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页脚-->
+<div class="floor bottom-bar-pannel" style="display: block" data-attach-point="footer">
+
+</div>
+<div id="foot">
+    <div id="footer">
+        <nav class="download_link">
+            <a data-attach-point="downApp">下载客户端</a>
+        </nav>
+        <p>
+            豫备案号ICP备14026278-1
+            <a style="color: #0093e7" href="/youdeService">资质证书</a>
+        </p>
+        <p>版权信息：河南优德大药房连锁有限公司</p>
+    </div>
+  </div>
+
+<script>
+    require(['components/index']);
+</script>
+<script language="javascript" type="text/javascript">
+    NTKF_PARAM = {
+        siteid:"kf_9183",   //企业ID，必填，取值参见文档开始表
+        settingid:"kf_9183_1457069435948",    //缺省客服配置ID，必填，取值参见文档开始表
+        uid:"",    //用户ID,未登录可以为空
+        uname:"",    //用户名，未登录可以为空
+        isvip:"0",          //是否为vip用户
+        userlevel:""    //网站自定义会员级别
+    }
+</script>
+<script type="text/javascript" src="http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9183" charset="utf-8"></script>
+</body>
+</html>

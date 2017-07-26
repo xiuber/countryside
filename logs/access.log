@@ -1,0 +1,21 @@
+[2017-06-02 09:20:19.265] [INFO] dateFileLog - TypeError: global.dots.cartNull is not a function
+    at onFulfilled (F:\testall\nodeTest\serverRoutes\sr-cart.js:33:56)
+    at tryCallOne (F:\testall\nodeTest\node_modules\promise\lib\core.js:37:12)
+    at F:\testall\nodeTest\node_modules\promise\lib\core.js:123:15
+    at flush (F:\testall\nodeTest\node_modules\asap\raw.js:50:29)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[2017-06-02 09:20:49.322] [INFO] dateFileLog - TypeError: global.dots.cartNull is not a function
+    at onFulfilled (F:\testall\nodeTest\serverRoutes\sr-cart.js:33:56)
+    at tryCallOne (F:\testall\nodeTest\node_modules\promise\lib\core.js:37:12)
+    at F:\testall\nodeTest\node_modules\promise\lib\core.js:123:15
+    at flush (F:\testall\nodeTest\node_modules\asap\raw.js:50:29)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+[2017-06-02 09:21:08.465] [INFO] dateFileLog - TypeError: global.dots.cartNull is not a function
+    at onFulfilled (F:\testall\nodeTest\serverRoutes\sr-cart.js:33:56)
+    at tryCallOne (F:\testall\nodeTest\node_modules\promise\lib\core.js:37:12)
+    at F:\testall\nodeTest\node_modules\promise\lib\core.js:123:15
+    at flush (F:\testall\nodeTest\node_modules\asap\raw.js:50:29)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)

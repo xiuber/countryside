@@ -1,0 +1,111 @@
+  <article id="container">
+    <!--搜索条-->
+    <header class="clearfix" id="gHeader">
+        <div class="level1">
+            <div class="f_logo">
+                <img src="image/b.png">
+            </div>
+            <div class="search">
+                <a href="/category"><img src="image/w.png"></a>
+            </div>
+            <div class="search_box">
+                <div class="wapSearch" data-attach-point="searchLink">
+                    <button type="submit" class="search_btn"></button>
+                    <input type="text" class="search_txt" placeholder="请输入你要搜索的商品" id="keyword">
+                </div>
+            </div>
+        </div>
+        <div class="logoPacity" style="opacity:0;" data-attach-point="logoPacity"></div>
+    </header>
+    <!--图片轮播-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        {{~ it.topimages:item}}
+            {{? item.gid==="20"}}
+                <div class="swiper-slide"><a href="zhuanti.html"><img src="{{=item.img}}"></a></div>
+            {{??}}
+                <div class="swiper-slide"><a href="goods/{{=item.gid}}.html"><img src="{{=item.img}}"></a></div>
+            {{?}}
+        {{~}}
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+<div class="test">
+    <!--宫格图标-->
+        <ul class="ind_navi clearfix">
+            <li>
+                <a href="/order/os"><i><img src="image/order.png"></i>我的订单</a>
+            </li>
+            <li>
+                <a href="/cart"><i><img src="image/shopcar.png"></i>购物车</a>
+            </li>
+            <li>
+                <a href="/logisticsAll"><i><img src="image/wuliu.png"></i>物流查询</a>
+            </li>
+            <li>
+                <a onclick="NTKF.im_openInPageChat();"><i><img src="image/biao.png"></i>在线咨询</a>
+            </li>
+        </ul>
+        <!--分类图标-->
+        <div class="promotion_goods" >
+            <div class="s_box">
+                <div class="l_box">
+                    <a href="classifyFl/25"><img src="image/k.png"></a>
+                </div>
+                <div class="r_box">
+                    <a href="classifyFl/41"><img src="image/l.png"></a>
+                </div>
+            </div>
+            <div class="x_box">
+                <div class="z_box">
+                    <a href="classifyFl/244"><img src="image/m.png"></a>
+                </div>
+                <div class="m_box">
+                    <a href="classifyFl/328"><img src="image/n.png"></a>
+                </div>
+                <div class="y_box">
+                    <a href="classifyFl/27"><img src="image/o.png"></a>
+                </div>
+            </div>
+        </div>
+        <!--分类列表-->
+            {{~ it.category:item}}
+                {{?item.images.url!=="cid=31"}}
+                    <div class="mid">
+                        <div>
+                            <a><img src="{{=item.images.img}}"></a>
+                        </div>
+                    </div>
+                    <div class="swiper-container-g">
+                        <div class="swiper-wrapper">
+                            {{~ item.goods:tp}}
+                                <li class="swiper-slide">
+                                    <div class="item-img bdr-r">
+                                        <a class="new-link" href="goods/{{=tp.gid}}.html"><img src="{{=tp.img}}"></a>
+                                    </div>
+                                    <p class="txt">{{=tp.title}}</p>
+                                    <div class="item-price">
+                                        <span class="new-price">{{=tp.shop_price}}</span>
+                                    </div>
+                                </li>
+                            {{~}}
+                        </div>
+                    </div>
+                {{?}}
+            {{~}}
+</div>
+<!--回到顶部-->
+    <div class="bottom-to-top"  style="display: none" data-attach-point="returnTop">
+        <img src="image/big.png" style="width: 100%">
+    </div>
+    <div class="no-data">
+         <div class="no-data-content">
+             <p>
+                 没有啦
+             </p>
+         </div>
+    </div>
+
+</article>

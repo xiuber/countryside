@@ -1,0 +1,43 @@
+html,body{padding:0;margin:0;font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", serif;}
+ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6{padding:0;margin:0;}
+ul,ol,li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+a,a:hover{text-decoration:none;}
+img{outline:none;}
+.pageMain{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding-top: 1px;
+    position: relative;
+}
+.wrapper{max-width:640px;margin:0 auto;position:relative;}
+.header{width:100%;height:24px;line-height:24px;padding:15px 0; background:#1661df;position:absolute;top:0;left:0;z-index:1;}
+.clear{clear:both;}
+.relative{position:relative;}
+.logo{display:inline-block;padding-left:10px;float:left;}
+.navBar{display:none;width:100%;position:absolute;top:34px;left:0;background:#fff;overflow:hidden;}
+.navBar li{display:inline-block;width:100%;text-align:center;border-bottom:1px dashed #dbdbdb;}
+.navBar li:last-child{border-bottom:none;}
+.navBar li a{display: block;padding:10px 0;color:#333;}
+.menuBtn{
+    width:24px;
+    height:24px;
+    margin-right:10px;
+    float:right;
+    overflow:hidden;
+    cursor: pointer;
+}
+.menuBtn img{
+    width:100%;
+    display:block;
+}
+.closeBtn{display:none;}
+.banner{margin-top:54px;}
+.box{
+    width:100%;
+    padding:0;
+    position:relative;
+}
+.box img{width:100%;display:block;}
+

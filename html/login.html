@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="pragma" content="no-cache">
+    <title data-attach-point="title">用户登录--优德医药网</title>
+    <meta data-attach-point="keywords" name="keywords" content="">
+    <meta data-attach-point="description" name="description" content="">
+    <link rel="stylesheet" type="text/css" href="src/mobile.min.css"/>
+    <script src="require.min.js"></script>
+    <script src="require-config.js"></script>
+</head>
+<body>
+    <header class="cateHeader">
+        <a class="go_back" href="/"></a>
+        <a class="goodCate">登录</a>
+        <div class="go_register"><a href="/register">注册</a></div>
+    </header>
+    <img class="login_log" src="image/loginTop_02.png">
+    <div class="loginBox">
+        <form>
+            <div class="newAddress">
+                <div class="address">
+                    <span>用户名：</span>
+                    <input type="text"  class="username" placeholder="用户名/手机号/邮箱" data-attach-point="un">
+                    <i></i>
+                </div>
+                <div class="address">
+                    <p class="password">密&nbsp;&nbsp; 码&nbsp;：</p>
+                    <input type="password" maxlength="20" placeholder="请输入密码" class="logPwd" data-attach-point="pw">
+                    <div class="button_off_mo" style="display:block" data-attach-point="off"></div>
+                    <div class="button_on_mo" style="display: none" data-attach-point="on"><span>abc</span></div>
+                </div>
+            </div>
+            <p class="password-error" style="display: block;" data-attach-point="err"></p>
+            <div class="login_check">
+                <div class="login_checkLogin" >
+                    <input id="rememberPwd" type="checkbox" checked data-attach-point="sc">
+                    <label for="rememberPwd">两周内免登录</label>
+                </div>
+                <div class="login_fP">
+                    <div class="ftR"><a href="/password">忘记密码?</a></div>
+                </div>
+            </div>
+
+            <div class="operate">
+                <button type="button" class="saveBtn btn-primary btn-block" data-attach-point="lg">登&nbsp;录</button>
+            </div>
+        </form>
+        <!--提示框-->
+        <div class="phoneDialog" style="display: none">
+            <a class="prompt">用户名密码错误,请重新输入</a>
+        </div>
+    </div>
+    <!--底部-->
+   <!-- <div class="pay_bottom">
+        <a class="loginByQQ">QQ登录</a>
+    </div>-->
+
+    <script>
+        require(['components/login']);
+    </script>
+</body>
+</html>

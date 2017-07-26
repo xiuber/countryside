@@ -1,0 +1,33 @@
+<div class="floor-container">
+    <ul class="tab4">
+        <li>
+                <span class="bar-img">
+                    <a class="index" href="javascript:void(0)"><img src="image/sy.png"></a>
+                </span>
+                <span class="cart-index">首页</span>
+        </li>
+        <li>
+                <span class="bar-img">
+                    <a class="category" href="/category"><img src="image/category.png"></a>
+                </span>
+                <span class="cart-span">分类</span>
+        </li>
+        <li>
+                <span class="bar-img">
+                    <a class="shopcar"  href="/cart">
+                        <i class="shopcar_num" data-attach-point="snm">0</i><img src="image/gw.png">
+                    </a>
+                </span>
+                <span class="cart-span">购物车</span>
+
+        </li>
+        <li data-attach-point="my">
+                <span class="bar-img">
+                    <a class="mine" href="javascript:void(0)">
+                        <img src="image/z.png">
+                    </a>
+                </span>
+                <span class="cart-span">我的</span>
+        </li>
+    </ul>
+</div>
