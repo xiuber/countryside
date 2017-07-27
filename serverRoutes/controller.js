@@ -6,14 +6,13 @@ var router=express.Router();
 
 
 var index=require("./sr-index");//首页
-var login=require("./sr-login");//登录
+
 
 
 
 
 
 router.all('/',index);//首页
-router.all('/login',login);//登录
 
 
 

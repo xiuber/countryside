@@ -31,6 +31,7 @@ console.log(__dirname);
 
 //外站数据地址
 global.dataHost="http://cbs.youde.com";
+//global.dataHost="https://easy-mock.com/";
 
 
 //处理404错误

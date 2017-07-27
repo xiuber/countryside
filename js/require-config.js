@@ -8,7 +8,8 @@ window.pathname=window.location['pathname'];
 //********用于访问服务端*******************
 window.configData={
     //数据源
-    dataHost:"url"
+    dataHost:"http://cbs.youde.com"
+    //dataHost:"https://easy-mock.com/"
 };
 //*************配置require加载js路径*********************
 require.config({
